@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import styles from './Navbar.module.css';
@@ -10,20 +11,27 @@ const NavBar = () => {
 	};
 
 	return (
-		<div className={styles.base}>
-			<form className={styles.form} onSubmit={submitContact}>
-				<input
-					className={styles.input}
-					type='text'
-					required
-					placeholder='Search For...'
-					name='searchFor'
-				/>
-				<button type='submit' className={styles.button}>
-					GO
-				</button>
-			</form>
-		</div>
+		<>
+			<Link href='/'>
+				<a className={styles.getHome}>
+					<p>HOME</p>
+				</a>
+			</Link>
+			<div className={styles.base}>
+				<form className={styles.form} onSubmit={submitContact}>
+					<input
+						className={styles.input}
+						type='text'
+						required
+						placeholder='Search For...'
+						name='searchFor'
+					/>
+					<button type='submit' className={styles.button}>
+						GO
+					</button>
+				</form>
+			</div>
+		</>
 	);
 };
 

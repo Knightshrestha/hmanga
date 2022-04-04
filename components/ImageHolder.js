@@ -18,6 +18,7 @@ const ImageHolder = ({ t, w, h, media_id, index, id }) => {
         height={h}
         src={url}
         alt="something went wrong"
+				loading='eager'
     />
   )
 }
@@ -35,6 +36,7 @@ const CoverHolder = ({ t, w, h, media_id }) => {
 			height={h}
 			src={url}
 			alt='something went wrong'
+			priority
 		/>
 	);
 };

@@ -18,9 +18,9 @@ const Details = ({ tags }) => {
 	const sortList = renderTags(tags);
 
 	function parseTags(tag_entry) {
-		const key = tag_entry[0]
-		const val = tag_entry[1]
-		return(<Detail keyName={key} tagList={val} key={key} />)
+		const key = tag_entry[0];
+		const val = tag_entry[1];
+		return <Detail keyName={key} tagList={val} key={key} />;
 	}
 
 	return (

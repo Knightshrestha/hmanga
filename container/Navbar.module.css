@@ -5,11 +5,26 @@
   justify-content: center;
 }
 
+.getHome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.getHome p {
+background-color: #57bd84;
+border-radius: 0.3rem;
+padding: 4px 6px;
+margin: 0;
+margin-top: 5px;
+}
+
 .form {
   margin: 5px;
   width: 100%;
   background-color: #57bd84;
   border-radius: .3rem;
+  position: relative;
 }
 
 .input,
@@ -37,8 +52,8 @@
 .button {
   display: none;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 0px;
+  right: 0px;
   width: 4rem;
   font-weight: bold;
   background: #57bd84;
@@ -54,3 +69,4 @@
 .button {
   display: block;
 }
+

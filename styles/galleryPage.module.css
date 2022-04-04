@@ -1,5 +1,10 @@
 .main {
-    padding: 0.13em;
+    padding: 0.2em;
+    margin: 0.6px;
     justify-content: center;
     text-align: center;
+}
+
+.spacer {
+    height: 5px;
 }
