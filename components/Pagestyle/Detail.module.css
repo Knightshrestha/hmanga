@@ -1,0 +1,50 @@
+.main {
+    /* background-color: blue; */
+    width: 100%;
+     display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    font-size: 14px;
+    color: #d9d9d9;
+}
+
+.box {
+    margin: .13em 0;
+}
+
+.main .keyName {
+    font-weight: 700;
+}
+
+.main .Holder {
+    color: #fff;
+    font-size: 1em;
+    vertical-align: middle;
+    display: inline-flex;
+    margin: 0.13em;
+    flex-direction: row;
+    justify-content: center
+}
+
+.Holder .name {
+    border-radius: 0.3rem 0 0 0.3rem;
+    /* padding: 0 2px 0 4px; */
+    background: #595959;
+    padding: 0.13em 0.39em;
+    /* text-decoration: none solid rgb(217,217,217); */
+}
+
+.Holder .count {
+    border-radius: 0 0.3rem 0.3rem 0;
+    padding: 0 4px 0 2px;
+    background: #404040;
+    padding: 0.13em 0.39em;
+    /* text-decoration: none solid rgb(128,128,128); */
+
+}
+
+.Holder .name , .Holder .count {
+    align-items: center;
+    display: flex;
+
+}

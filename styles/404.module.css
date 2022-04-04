@@ -1,0 +1,6 @@
+.base {
+  height: calc(100vh - 2rem - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

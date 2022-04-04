@@ -1,0 +1,56 @@
+.base {
+  background: #2f2f2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  margin: 5px;
+  width: 100%;
+  background-color: #57bd84;
+  border-radius: .3rem;
+}
+
+.input,
+.button {
+  height: 2rem;
+  border: 0;
+  color: #2f2f2f;
+  font-size: 1.6rem;
+}
+
+.input {
+  outline: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0 .5rem;
+  border-radius: .3rem;
+  appearance: none;
+  transition: all .3s cubic-bezier(0, 0, 0.43, 1.49);
+  transition-property: width,
+  border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+.button {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 4rem;
+  font-weight: bold;
+  background: #57bd84;
+  border-radius: 0 .3rem .3rem 0;
+}
+
+.input:not(:placeholder-shown) {
+  border-radius: .3rem 0 0 .3rem;
+  width: calc(100% - 4rem);
+}
+
+.input:not(:placeholder-shown),
+.button {
+  display: block;
+}

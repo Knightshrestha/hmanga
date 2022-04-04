@@ -1,0 +1,25 @@
+.base {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.pageButton {
+    margin: 0 10px;
+    /* background-color: gray; */
+    /* border-radius: 3em; */
+    padding: 7px;
+    height: 35px;
+    width: 40px;
+}
+
+.activepageButton {
+    margin: 0 10px;
+    background-color: gray;
+    border-radius: 3em;
+    padding: 7px;
+    height: 35px;
+    width: 40px;
+}
