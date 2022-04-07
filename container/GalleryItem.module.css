@@ -35,7 +35,7 @@
 .a:hover .caption {
   height: fit-content;
   overflow: visible;
-  /* text-overflow: ellipsis; */
   white-space: normal;
   word-break: keep-all;
+  padding-bottom: 3px;
 }
