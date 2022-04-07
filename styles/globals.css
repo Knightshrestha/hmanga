@@ -1,10 +1,16 @@
 html,
 body {
+  --black1: #0d0d0d;
+  --black2: #1f1f1f;
+  --black3: #404040;
+  --black4: #4d4d4d;
+  --whitish: #d9d9d9;
+  --icon1: #ed2553;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: #1f1f1f;
+  background: var(--black2);
 }
 
 * {

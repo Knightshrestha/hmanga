@@ -5,6 +5,7 @@ import axios from 'axios';
 import { ThumbHolder } from '@components/ImageHolder';
 import Link from 'next/link';
 import Head from 'next/head';
+import { GalleryItem } from '@comp/GalleryItem';
 
 export default function TagContent({ data, curPage }) {
 	if (data == null) return <h1>404 - Page Not Found</h1>;
@@ -52,25 +53,10 @@ export default function TagContent({ data, curPage }) {
 			<h3>ALL</h3>
 
 			<div className={styles.container}>
-				{result.map((val) => {
+				{result.map((val, index) => {
 					const { images } = val;
 					return (
-						<div key={val.id} className={styles.gallery}>
-							<Link href={`/view/${val.id}`}>
-								<a className={styles.a}>
-									<ThumbHolder
-										h={images.thumbnail.h}
-										w={images.thumbnail.h}
-										t={images.thumbnail.t}
-										media_id={val.media_id}
-										className={styles.gal}
-									/>
-									<div className={styles.caption}>
-										{val.title.pretty}
-									</div>
-								</a>
-							</Link>
-						</div>
+						<GalleryItem key={index} val={val} images={images} />
 					);
 				})}
 			</div>
@@ -138,3 +124,6 @@ export const getServerSideProps = async ({ params }) => {
 	}
 	
 };
+
+
+

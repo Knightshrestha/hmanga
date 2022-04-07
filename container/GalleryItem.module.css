@@ -1,0 +1,41 @@
+.gallery {
+  margin: 0.13em;
+  overflow: hidden;
+  border-radius: 0.3em;
+  max-width: 250px;
+}
+
+.a {
+  margin: 0;
+  padding: 0;
+  background: var(--black4);
+}
+
+.gal {
+  margin: 0;
+  padding: 0;
+  background: var(--black4);
+}
+
+.caption {
+  width: 100%;
+  font: 15px;
+  margin: 0;
+  border-radius: 0 0 0.3em 0.3em;
+  align-items: center;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--black4);
+  padding: 0 3px;
+}
+
+.a:active .caption,
+.a:hover .caption {
+  height: fit-content;
+  overflow: visible;
+  /* text-overflow: ellipsis; */
+  white-space: normal;
+  word-break: keep-all;
+}

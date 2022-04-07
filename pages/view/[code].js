@@ -88,8 +88,8 @@ export default function GalleryPage({ data }) {
 						</div>
 					</div>
 				</div>
-<div className={styles.spacer} />
-				<div>
+				<div className={styles.spacer} />
+				<div className={styles.IMGgallery}>
 					{pages.map((page, index) => {
 						return (
 							<div key={index}>
@@ -101,11 +101,11 @@ export default function GalleryPage({ data }) {
 									media_id={media_id}
 									index={index}
 								/>
-								<p>{'Page ' + (index + 1)}</p>
+								{ Number.isInteger((index + 1)/ 10) ? <p>{'Page ' + (index + 1)}</p> : <></>}
+							
 							</div>
 						);
 					})}
-					
 				</div>
 			</div>
 		</>

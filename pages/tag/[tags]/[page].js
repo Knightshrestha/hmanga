@@ -1,8 +1,9 @@
 import styles from 'styles/maingallery.module.css'
 import pageStyle from 'styles/pagination.module.css';
+import { GalleryItem } from '@comp/GalleryItem';
+
 
 import axios from 'axios'
-import { ThumbHolder } from '@components/ImageHolder'
 import Link from 'next/link'
 import Head from 'next/head';
 import NotFound from '@comp/NotFound';
@@ -56,22 +57,7 @@ export default function TagContent({ data, curPage, tags }) {
 				{result.map((val) => {
 					const { images } = val;
 					return (
-						<div key={val.id} className={styles.gallery}>
-							<Link href={`/view/${val.id}`}>
-								<a className={styles.a}>
-									<ThumbHolder
-                    h={images.thumbnail.h}
-                    w={images.thumbnail.h}
-                    t={images.thumbnail.t}
-                    media_id={val.media_id}
-                    className={styles.gal}
-									/>
-									<div className={styles.caption}>
-										{val.title.pretty}
-									</div>
-								</a>
-							</Link>
-						</div>
+						<GalleryItem key={index} val={val} images={images} />
 					);
 				})}
 			</div> 
