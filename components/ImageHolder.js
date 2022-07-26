@@ -14,6 +14,7 @@ const ImageHolder = ({ t, w, h, media_id, index, id }) => {
 		ect[t];
   return (
     <Image
+unoptimized 
         width={parseInt(w)}
         height={h}
         src={url}
@@ -32,6 +33,7 @@ const CoverHolder = ({ t, w, h, media_id }) => {
 		ect[t];
 	return (
 		<Image
+unoptimized
 			width={parseInt(w)}
 			height={h}
 			src={url}
@@ -50,6 +52,7 @@ const ThumbHolder = ({ t, w, h, media_id }) => {
 		ect[t];
 	return (
 		<Image
+unoptimized
 			width={parseInt(w)}
 			height={h}
 			src={url}
